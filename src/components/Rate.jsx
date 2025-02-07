@@ -3,8 +3,6 @@ import "./rate.css"
 
 export default function Rate({setSubmit,setRate,rate}) {
     const buttons=[1,2,3,4,5]
-    
-
     return(
         <div className="rateDiv">
             <p>How did we do?</p>
@@ -15,8 +13,7 @@ export default function Rate({setSubmit,setRate,rate}) {
                 <button key={item} onClick={()=>setRate(item)}
                 style={{backgroundColor: rate === item?'orange':""}} >{item}</button>)}
             </div>
-            <button onClick={()=> rate && setSubmit(true)}>Submit</button>
-                
+            <button onClick={()=> rate && setSubmit(true)}>Submit</button>          
         </div>
     )
 }
