@@ -8,7 +8,7 @@ function App() {
     const [rate,setRate]= useState("");
   return (
     <>
-     {submit?<Result rate={rate}/>: <Rate setSubmit={setSubmit}/>}
+        {submit?<Result rate={rate}/> : <Rate setSubmit={setSubmit} rate={rate} setRate={setRate}/>}
     </>
   )
 }

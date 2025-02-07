@@ -1,8 +1,7 @@
 import React, { use, useState } from "react";
 import "./rate.css"
 
-
-export default function Rate({setSubmit,rate}) {
+export default function Rate({setSubmit,setRate,rate}) {
     const buttons=[1,2,3,4,5]
     
 
