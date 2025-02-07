@@ -10,13 +10,13 @@ export default function Rate({setSubmit,rate}) {
         <div className="rateDiv">
             <p>How did we do?</p>
             <p>Please let us know how we did with your support request.
-                 All feedback is appreciated to help us improve our offering!</p>
+                All feedback is appreciated to help us improve our offering!</p>
             <div className="mapBtn">
             {buttons.map((item)=>
                 <button key={item} onClick={()=>setRate(item)}
                 style={{backgroundColor: rate === item?'orange':""}} >{item}</button>)}
             </div>
-            <button onClick={()=>setSubmit(true)}>Submit</button>
+            <button onClick={()=> rate && setSubmit(true)}>Submit</button>
                 
         </div>
     )
